@@ -1,0 +1,55 @@
+function App() {
+
+  return (
+
+    <div>
+      <form>
+        <p>Nombre(s) </p>
+        <input type="text" value="nombre" />
+
+        <p>Apellido</p>
+        <input type="text" value="apellido" />
+
+        <p>Hobbie favorito</p>
+        <input type="text" value="hobbie" />
+
+        <p>Fecha de nacimiento</p>
+        <input type="date" />
+
+        <p></p>
+
+        <input type="submit" value="Enviar" />
+
+      </form>
+    </div>
+
+  );
+}
+
+
+  syncDataNommbre(nombre) {
+    console.log(nombre)
+    this.setState({
+      nombre: nombre
+    })
+  };
+  syncDataApellido(apellido) {
+    console.log(apellido)
+    this.setState({
+      apellido: apellido
+    })
+  };
+
+  syncDataHobbie(hobbie) {
+    console.log(hobbie)
+    this.setState({
+      hobbie: hobbie
+    })
+  };
+
+  syncDataFecha(fechaCum) {
+    console.log(fechaCum)
+    this.setState({
+      fechaCum: fechaCum
+    })
+  };
