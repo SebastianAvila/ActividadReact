@@ -16,9 +16,11 @@ const CountDownTimer = ({hoursMinSecs}) => {
             setTime([hrs, mins + 1, 0]);
         } else {
             setTime([hrs, mins, secs + 1]);
-        }
+        }   
     };
 
+
+    
 
     const reset = () => setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
 
